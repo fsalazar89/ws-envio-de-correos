@@ -1,0 +1,23 @@
+{
+  "name": "servicio_envio_de_correos",
+  "version": "1.0.0",
+  "description": "Servidor de producicon: 172.16.8.143\r Dominio para certificado SSL: https://soporte.flamingo.com.co\r Ruta del proyecto en el servidor de producicon: xxxxxxxxxxxxxxxxxxx\r Aplicacion corriendo en el puerto: 8888 // en QA\r Aplicacion corriendo en el puerto: 8020 // en PRODUCCION\r Comando apra iniciar la aplicacion: -> node src/app.js\r Comando apra iniciar aplicaion con pm2: -> pm2 restart service_get_stock",
+  "main": "index.js",
+  "scripts": {
+    "local": "nodemon src/app.js",
+    "start": "pm2 start node src/app.js --name 8021_Servicio_EnvioCorreo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.8.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
